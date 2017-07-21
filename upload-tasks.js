@@ -4,11 +4,11 @@ const {slugify, writeFile, unlinkFile} = require('coral-fs-tasks')
 const {writeThumbnail} = require('coral-img-tasks')
 
 //uploadImg :: DbTask InsertOne (db_obj {} -> dbInsert) -> Path -> {originalname, mimetype, buffer} -> Task Error fsWrite+dbInsert
-const uploadImg = R.curry((insertOne, {fs_path, dir_path}, {mimetype, originalname, buffer}) => { 
+const uploadImg = R.curry((insertOne, {fs_path, url_path}, {mimetype, originalname, buffer}) => { 
 	let 
 		filename = slugify(originalname),
-		url = dir_path +'/'+ filename,
-		thumbnail_url = dir_path + '/thumbnails/' + filename,
+		url = url_path +'/'+ filename,
+		thumbnail_url = url_path + '/thumbnails/' + filename,
 		createdAt  = new Date(),
 		db_obj = {filename, originalname, mimetype, url, thumbnail_url, createdAt, displayname: originalname },
 		full_obj = R.assoc('buffer', buffer, db_obj),
