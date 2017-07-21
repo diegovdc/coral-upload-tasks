@@ -1,4 +1,6 @@
 ## Sample Usage
+
+### Your Model
 ```
 // Model/Uploads.js
 const app = require('../app').app
@@ -24,6 +26,7 @@ module.exports = {
 }
 ```
 
+### Your Controller
 ```
 //Controller/Uploads.js
 //an express.js controller
