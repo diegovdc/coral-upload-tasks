@@ -2,7 +2,7 @@
   "name": "coral-upload-tasks",
   "version": "1.0.0",
   "description": "Module wraps a few functions from 'mongodb' module inside Tasks (from folktale/data.task), for easy function composition (using, for example, Ramda's composeK).",
-  "main": "mongo-tasks.js",
+  "main": "upload-tasks.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --colors --reporter spec ./**/*spec.js"
   },
