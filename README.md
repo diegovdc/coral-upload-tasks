@@ -40,3 +40,4 @@ module.exports.post = (req, res) => {
 
 ## To do
 Add Tests (at the moment this file is tested by the FileUploads.spec.js sample test in Coral Framework)
+Remove calls to Date() to make the Tasks completely pure?
