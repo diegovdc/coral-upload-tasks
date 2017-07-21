@@ -1,5 +1,5 @@
 {
-  "name": "coral-mongo-tasks",
+  "name": "coral-upload-tasks",
   "version": "1.0.0",
   "description": "Module wraps a few functions from 'mongodb' module inside Tasks (from folktale/data.task), for easy function composition (using, for example, Ramda's composeK).",
   "main": "mongo-tasks.js",
@@ -9,21 +9,16 @@
   "author": "Diego Villaseñor",
   "license": "ISC",
   "devDependencies": {
-    "cheerio": "^0.22.0",
     "gulp": "^3.9.1",
     "gulp-mocha": "^4.3.1",
     "gulp-watch": "^4.3.11",
-    "jasmine-node": "^1.14.5",
     "chai": "^3.5.0",
-    "request": "^2.79.0",
-    "mocha": "^3.2.0",
-    "proxyquire": "^1.7.10"
+    "mocha": "^3.2.0"
   },
   "dependencies": {
     "coral-fs-tasks": "^1.0.1",
     "coral-img-tasks": "^1.0.0",
     "data.task": "^3.1.1",
-    "mongodb": "^2.2.29",
     "ramda": "^0.23.0"
   }
 }
